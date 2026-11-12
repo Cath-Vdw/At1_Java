@@ -9,8 +9,9 @@ public class Lettre {
     public Lettre(char caractere, int valeur) {
         this.caractere = caractere;
         this.valeur = valeur;
-        lettreRepresentee = ' ';                // vide tant que le joker n'a pas de valeur assignée
-        if (caractere == '?') joker = true;     // on donne aux tuiles joker la valeur ?
+        lettreRepresentee = ' ';         // vide tant que le joker n'a pas de valeur assignée
+        if (caractere == '?')
+            joker = true;                // tuiles joker ont la valeur ? pour les différencier des autres
     }
 
     // Getters
@@ -30,9 +31,8 @@ public class Lettre {
         return lettreRepresentee;
     }
 
-    // Methode permettant de transformer le joker en une autre lettre
+    // Transforme le joker en lettre si la case est un joker et n'a pas encore de lettre
     public void setLettreRepresentee(char lettre) {
-        // ne fonctionne que si la case est un joker et n'a pas encore de lettre assignée
         if (joker && lettreRepresentee == ' ') this.lettreRepresentee = lettre;
     }
 }
