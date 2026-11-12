@@ -19,7 +19,7 @@ public class Lettre {
         return caractere;
     }
 
-    public boolean isJoker() {
+    public boolean estJoker() {
         return joker;
     }
 
