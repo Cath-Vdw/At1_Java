@@ -16,7 +16,9 @@ public class Lettre {
 
     // Getters
     public char getCaractere() {
-        return caractere;
+        if (joker && lettreRepresentee != ' ')
+            return lettreRepresentee;  // si le joker a été assigné,c'est cette lettre qu'onrenvoie
+        else return caractere;
     }
 
     public boolean estJoker() {
