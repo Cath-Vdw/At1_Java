@@ -6,7 +6,7 @@ public class Chevalet {
 
     // Constructeur
     public Chevalet() {
-       tuiles = new ArrayList<Lettre>();
+        tuiles = new ArrayList<Lettre>();
     }
 
     // Méthode qui affiche le chevalet
@@ -19,8 +19,17 @@ public class Chevalet {
     }
 
     // Méthode qui vérifie si le joueur possède bien la tuile qu'il veut jouer
-    public boolean possedeTuiles(List lettresCherchees){
+    public boolean possedeTuiles(List<Lettre> lettresCherchees) {
+        return false;
+    }
 
+    // Méthode qui retire les tuiles jouées
+    public void retireTuile(List<Lettre> tuilesJoues){
+
+    }
+
+    // Méthode qui remplit le chevalet à la fin du tour
+    public void remplitChevalet(Sac sac){
 
     }
 }
