@@ -17,4 +17,10 @@ public class Chevalet {
             else System.out.printf(l.getCaractere() + " | ");
         }
     }
+
+    // Méthode qui vérifie si le joueur possède bien la tuile qu'il veut jouer
+    public boolean possedeTuiles(List lettresCherchees){
+
+
+    }
 }
